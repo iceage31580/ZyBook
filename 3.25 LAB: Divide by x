@@ -1,0 +1,24 @@
+/*
+  Write a program using integers userNum and x as input, and output userNum divided by x three times.
+*/ 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+   int userNum; 
+   int divisor; //number we are dividing by
+   
+   cin >> userNum; 
+   cin >> divisor; 
+   
+   userNum = userNum/divisor;
+   cout << userNum << " ";  
+   userNum = userNum/divisor;
+   cout << userNum << " "; 
+   userNum = userNum/divisor;
+   cout << userNum << endl; 
+
+   return 0;
+}
