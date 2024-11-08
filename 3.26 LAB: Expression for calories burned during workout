@@ -1,0 +1,30 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+
+   double age; 
+   double weight; 
+   double heartRate; 
+   double time; 
+   double totalCalories; 
+   
+   cin >> age; 
+   cin >> weight; 
+   cin >> heartRate; 
+   cin >> time; 
+   cin >> totalCalories; 
+   
+   totalCalories = (age = age * 0.2757) + (weight = weight * 0.03295) + (heartRate = (heartRate * 1.0781) - 75.4991); 
+   time = time/8.368; 
+   
+   totalCalories = totalCalories*time;
+   
+   cout << fixed << setprecision(2); 
+   
+   cout << "Calories: " << totalCalories << " calories" << endl; 
+   
+
+   return 0;
+}
