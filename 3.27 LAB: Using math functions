@@ -1,0 +1,40 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+   double x;
+   double y;
+   double z;
+   double temp1; 
+   double temp2;
+   double temp3; 
+   double result1; 
+   double result2; 
+   double result3; 
+   double result4; 
+
+   cin >> x; 
+   cin >> y; 
+   cin >> z;  
+
+  //output x to the power of z
+  result1 = pow(x,z); 
+  cout << result1 << " "; 
+  
+  //x to the power of (y to the power of z)
+  temp1 = pow(y,z); 
+  result2 = pow(x, temp1); 
+  cout << result2 << " "; 
+  
+  //the absolute value of y
+  result3 = fabs(y); 
+  cout << result3 << " "; 
+  
+  //the square root (xy to the power of z)
+  temp2 = x * y; 
+  temp3 = pow(temp2,z); 
+  result4 = sqrt(temp3); 
+  cout << result4 << endl; 
+  
+}
